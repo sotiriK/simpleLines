@@ -1,2 +1,2 @@
 # simpleLines
-simple tetris-like unity game
+Simple Tetris-like Unity game.
