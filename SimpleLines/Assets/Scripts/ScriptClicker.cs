@@ -51,13 +51,15 @@ public class ScriptClicker : MonoBehaviour {
 			mSpark.transform.parent = gameObject.transform;
 			mSpark.layer = this.gameObject.layer;
 		}
-		mSpark.GetComponent<ParticleSystem>().loop = true;
+		var ps = mSpark.GetComponent<ParticleSystem>().main;
+		ps.loop = true;
 		mSpark.SetActive(true);
 	}
 	
 	public void SparkOff(bool nImmediate = false) {
 		if (mSpark == null) return;
-		mSpark.GetComponent<ParticleSystem>().loop = false;
+		var ps = mSpark.GetComponent<ParticleSystem>().main;
+		ps.loop = true;
 		if (nImmediate) mSpark.SetActive(false);
 	}
 

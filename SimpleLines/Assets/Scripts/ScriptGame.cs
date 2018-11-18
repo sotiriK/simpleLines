@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -327,7 +328,7 @@ public class ScriptGame : MonoBehaviour {
 		} else if(nAction == GameFlow.FirstFrame) {
 			Object nAnimator = nPair.Value;
 			if(nAnimator == animeIntro.gameObject) 
-				Application.LoadLevel("SceneGame");
+				SceneManager.LoadScene("SceneGame");
 		}
 	}
 

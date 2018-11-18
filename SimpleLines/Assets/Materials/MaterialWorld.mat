@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MaterialWorld
   m_Shader: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
@@ -69,4 +69,4 @@ Material:
     m_Colors:
     - _Color: {r: 0.4745098, g: 0.7019608, b: 0.07058824, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _Tint: {r: 0.3637999, g: 0.64012146, b: 0.35987833, a: 1}
+    - _Tint: {r: 0.41960785, g: 0.46620986, b: 0.24660203, a: 1}
