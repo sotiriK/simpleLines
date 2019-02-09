@@ -7,7 +7,11 @@
         {
             "name": "Unity Editor",
             "type": "unity",
+<<<<<<< HEAD
             "path": "/c:/Users/Sotiri/Desktop/projects/repos/github/simpleLines/SimpleLines/Library/EditorInstance.json",
+=======
+            "path": "/Users/carasos/Downloads/repos/simpleLines/SimpleLines/Library/EditorInstance.json",
+>>>>>>> 5fd6e0b8f7441e5d779c06b6bec0e2ef1f38ab23
             "request": "launch"
         },
         {
