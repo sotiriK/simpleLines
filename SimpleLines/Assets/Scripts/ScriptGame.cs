@@ -83,6 +83,11 @@ public class ScriptGame : MonoBehaviour {
 		animeIntro.GetComponent<ScriptScreenPanel>().PushBackAlternate(); //Send current piece camera behind interface, animeIntro doesn't do this, all other animes do it
 	}
 
+    void OnApplicationPause(bool pauseStatus) {
+    	if (pauseStatus) 
+			PlayerActionPause();
+    }
+
 	private void Update() {
 		switch(mGameState) {
 		case GameState.Begin: //Startup of scene
@@ -725,7 +730,7 @@ public class ScriptGame : MonoBehaviour {
 		float nTopPanelH = panelTop.GetComponent<RectTransform>().rect.height * canvas2d.scaleFactor;
 		float nBotPanelH = panelBottom.GetComponent<RectTransform>().rect.height * canvas2d.scaleFactor;
 		float nAvailH = mMainSizeFactor * (Screen.height - nTopPanelH - nBotPanelH);
-		//Height moves cam to fit, if it is bigger or samller than avail
+		//Height moves cam to fit, if it is bigger or smaller than avail
 		while(ScriptCommon.ScreenObjectHeight(goPlayArea) < nAvailH)
 			nCam.position = new Vector3(nCam.position.x, nCam.position.y, nCam.position.z + mZoomStep);
 		while(ScriptCommon.ScreenObjectHeight(goPlayArea) > nAvailH)
